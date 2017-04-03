@@ -1,0 +1,83 @@
+html {
+  height:100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  width:100%;
+}
+
+.info {
+  position:relative;
+  background-color:rgba(0, 0, 0, 0.5);
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.4rem;
+  background-color: black;
+  text-align: right; 
+  position:fixed;
+}
+
+#weather{
+  position: relative;
+  background-color:rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
+  padding-top:20%;
+  padding-bottom:15%;
+  padding-left:20%;
+  margin-left:30%;
+  margin-right:30%;
+}
+
+@media screen and (max-width: 750px) and (orientation: portrait) {
+  .info {
+     width: 80%; 
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top:0%;
+  }
+  
+  #weather{
+    //margin-top: 25%;
+    margin-left:10%;
+    margin-right:10%;
+    padding-top:40%;
+    padding-bottom:40%;
+  }
+}
+
